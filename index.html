@@ -13,21 +13,41 @@
         <nav class="navbar" aria-label="Main navigation">
             <a href="#intro">Introduction</a>
             <a href="#about">About Me</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
+            <a href="#skills">Skills And Achievements</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
-
     <main>
         <section id="intro" class="intro">
             <h2>Hola, I'm Pushkar Singhal</h2>
             <h3>Programmer in Training</h3>
             <p>I am a passionate web developer eager to build beautiful and functional websites.</p>
+
+            <ul>
+                <li>
+                    <a href="mailto:psinghal0135@gmail.com">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email Logo" class="icon" />
+                        Email
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/pushkar-singhal-129835325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn Logo" class="icon" />
+                        LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/BitwisePushkar" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub Logo" class="icon" />
+                        GitHub
+                    </a>
+                </li>
+            </ul>
         </section>
         <section id="about" class="about">
             <h2>About Me</h2>
             <p>Sophomore at AKGEC</p>
+
             <div class="education">
                 <article class="school">
                     <h3>Meerut City Public School</h3>
@@ -44,5 +64,53 @@
                 </article>
             </div>
         </section>
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/html5.svg" alt="HTML" />
+                    <span>HTML</span>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/css3.svg" alt="CSS" />
+                    <span>CSS</span>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/java.svg" alt="Java" />
+                    <span>Java</span>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/python.svg" alt="Python" />
+                    <span>Python</span>
+                </div>
+                <div class="skill">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/c.svg" alt="C" />
+                    <span>C</span>
+                </div>
+            </div>
+            <h2>Achievements</h2>
+            <ul>
+                <li>Class Topper in 1st sem result</li>
+                <li>Class representative</li>
+                <li>7th position in bitset</li>
+                <li>Selected in SOFTWARE INCUBATROR</li>
+            </ul>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label><br />
+                <input type="text" id="name" name="name" required /><br /><br />
+                <label for="email">Email:</label><br />
+                <input type="email" id="email" name="email" required /><br /><br />
+                <label for="message">Message:</label><br />
+                <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Pushkar Singhal</p>
+    </footer>
 </body>
 </html>
