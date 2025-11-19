@@ -799,6 +799,13 @@
             .content-box {
                 padding: 2rem 1.5rem;
             }
+            .contact-content {
+                text-align: center;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
         }
 
         @media (max-width: 480px) {
@@ -971,6 +978,9 @@
                         <span class="tag">PostgreSQL</span>
                         <span class="tag">Redis</span>
                         <span class="tag">AWS</span>
+                        <span class="tag">Celery</span>
+                        <span class="tag">Websocket</span>
+                        <span class="tag">Docker</span>
                     </div>
                     <p>Agile is a modern Jira-inspired app for managing projects, issues, and teams, featuring secure authentication and a scalable, high-performance backend.</p>
                     <a href="https://github.com/BitwisePushkar/AgileEnv-backend.git" class="project-link" target="_blank"  rel="noopener noreferrer">View Project →</a>
@@ -984,31 +994,22 @@
                         <span class="tag">Redis</span>
                         <span class="tag">AWS</span>
                         <span class="tag">Websocket</span>
+                        <span class="tag">Docker</span>
                     </div>
                     <p>Full-featured travel planning AI Itinenary creation, Chat feature, and AUthentication. Built to handle high traffic with caching strategies.</p>
                     <a href="https://github.com/BitwisePushkar/tripsync-backend.git" class="project-link" target="_blank"  rel="noopener noreferrer">View Project →</a>
                 </div>
                 <div class="project-card">
                     <div class="project-num">03</div>
-                    <h3>Vitasys</h3>
-                    <div class="tags">
-                        <span class="tag">Django</span>
-                        <span class="tag">PostgreSQL</span>
-                        <span class="tag">Redis</span>
-                        <span class="tag">AWS & Render</span>
-                    </div>
-                    <p>VitaSys streamlines hospital operations with patient management, scheduling, billing, and role-based access in a secure, scalable platform.</p>
-                    <a href="https://climb-knight-new-avatar.vercel.app/" class="project-link" target="_blank"  rel="noopener noreferrer">View Project →</a>
-                </div>
-                <div class="project-card">
-                    <div class="project-num">04</div>
                     <h3>Climb Knight - New Avatar</h3>
                     <div class="tags">
-                        <span class="tag">HTML/CSS/JS</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
                         <span class="tag">Canvas</span>
                     </div>
                     <p>Created a game using HTML/CSS/JS, updated version of Climb Knight.</p>
-                    <a href="https://climb-knight-new-avatar.vercel.app/" class="project-link" target="_blank"  rel="noopener noreferrer">View Project →</a>
+                    <a href="https://github.com/BitwisePushkar/Climb-Knight-New-Avatar" class="project-link" target="_blank"  rel="noopener noreferrer">View Project →</a>
                 </div>
             </div>
         </div>
@@ -1064,8 +1065,8 @@
     </footer>
 
     <script>
-        const darkVideo = "https://www.pexels.com/download/video/29874954/";
-        const lightVideo = "https://www.pexels.com/download/video/4779866/";
+        const darkVideo = "{% static 'videos/dark.mp4' %}";
+        const lightVideo = "{% static 'videos/light.mp4' %}";
 
         function setBackgroundVideo(theme) {
             const video = document.getElementById("bgVideo");
